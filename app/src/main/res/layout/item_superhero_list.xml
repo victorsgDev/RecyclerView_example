@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:id="@+id/tvSuperhero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivAvatar"
+        android:layout_toEndOf="@+id/ivAvatar"
+        tools:text= "dadawdawdwd" />
+    <TextView
+        android:id="@+id/tvRealName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@+id/tvSuperhero"
+        android:layout_toRightOf="@+id/ivAvatar"
+        android:layout_toEndOf="@+id/ivAvatar"
+        tools:text = "wdawd"/>
+    <TextView
+        android:id="@+id/tvPublisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        tools:text = "DC"/>
+</RelativeLayout>
